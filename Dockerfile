@@ -3,7 +3,7 @@
 FROM alpine:3.7
 
 ARG SS_VER=3.3.4
-
+USER root
 RUN \
     set -ex \
     && apk add --no-cache --virtual .build-deps \
